@@ -1,0 +1,16 @@
+if SHIELD_N0S1_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "n0s1"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_N0S1_LEFT
+
+if SHIELD_N0S1_LEFT || SHIELD_N0S1_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_N0S1_LEFT || SHIELD_N0S1_RIGHT

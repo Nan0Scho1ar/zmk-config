@@ -1,0 +1,12 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
+// instructions.
+
+#include "n0s1.dtsi"
+#include "n0s1-layouts.dtsi"
+
+/ {
+    chosen {
+        zmk,matrix_transform = &left_transform;
+    };
+};

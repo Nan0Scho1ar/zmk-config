@@ -1,0 +1,28 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
+// instructions.
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan_0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+        diode-direction = "row2col";
+        row-gpios
+            = <&gpio1 0  GPIO_ACTIVE_HIGH>
+            , <&gpio0 11 GPIO_ACTIVE_HIGH>
+            , <&gpio1 4  GPIO_ACTIVE_HIGH>
+            , <&gpio1 6  GPIO_ACTIVE_HIGH>
+            ;
+        col-gpios
+            = <&gpio1 15 GPIO_ACTIVE_HIGH>
+            , <&gpio1 13 GPIO_ACTIVE_HIGH>
+            , <&gpio1 11 GPIO_ACTIVE_HIGH>
+            , <&gpio0 10 GPIO_ACTIVE_HIGH>
+            , <&gpio0 6  GPIO_ACTIVE_HIGH>  /* <-- VERIFY this pin, see note above */
+            ;
+    };
+};
