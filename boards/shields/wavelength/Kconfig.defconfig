@@ -1,0 +1,6 @@
+if SHIELD_WAVELENGTH
+
+config ZMK_KEYBOARD_NAME
+    default "wavelength"
+
+endif # SHIELD_WAVELENGTH
