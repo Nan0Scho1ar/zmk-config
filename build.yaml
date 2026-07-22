@@ -27,5 +27,8 @@ include:
   - board: nice_nano_v2
     shield: n0s1_right
   - board: nice_nano_v2
+    shield: wavelength
+
+  - board: nice_nano_v2
     shield: settings_reset
 
