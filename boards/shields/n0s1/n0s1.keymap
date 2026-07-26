@@ -10,6 +10,10 @@
 #define NAV 3
 #define FN 4
 
+&lt {
+    quick-tap-ms = <150>;
+};
+
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -44,7 +48,7 @@
 &kp Q       &kp W       &kp F        &kp P        &kp B                            &kp J          &kp L        &kp U        &kp Y       &kp SEMI
 &hml LGUI A &hml LALT R &hml LSHFT S &hml LCTRL T &kp G                            &kp M          &hmr RCTRL N &hmr RSHFT E &hmr RALT I &hmr RGUI O
 &kp Z       &kp X       &kp C        &kp D        &kp V                            &kp K          &kp H        &kp COMMA    &kp DOT     &kp FSLH
-                        &lt FN RET    &lt NAV TAB &lt SYMPAD SPACE &kp ESC &kp ESC &lt SYMPAD RET &lt NAV BSPC &lt FN DEL
+                        &lt FN RET   &lt NAV TAB  &lt SYMPAD SPACE &kp ESC &kp ESC &lt SYMPAD RET &lt NAV BSPC &lt FN DEL
             >;
         };
 
@@ -80,10 +84,10 @@
         fn {
             display-name = "Fn";
             bindings = <
-&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4               &kp PSCRN   &kp F7 &kp F8 &kp F9 &kp F12
-&bt BT_CLR   &trans       &trans       &trans       &sys_reset                 &sys_reset  &kp F4 &kp F5 &kp F6 &kp F11
-&trans       &trans       &trans       &trans       &bootloader                &bootloader &kp F1 &kp F2 &kp F3 &kp F10
-                          &trans       &trans       &trans       &trans &trans &trans      &trans &trans
+&bt BT_SEL  0 &bt BT_SEL  1 &bt BT_SEL  2 &bt BT_SEL  3 &bt BT_SEL  4              &kp PSCRN &kp F7 &kp F8 &kp F9 &kp F12
+&bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4              &trans    &kp F4 &kp F5 &kp F6 &kp F11
+&bt BT_CLR    &trans        &trans        &sys_reset    &bootloader                &trans    &kp F1 &kp F2 &kp F3 &kp F10
+                            &trans        &trans        &trans       &trans &trans &trans    &trans &trans
             >;
         };
 
