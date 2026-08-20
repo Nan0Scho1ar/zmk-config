@@ -1,0 +1,5 @@
+config SHIELD_SODAPOP_LEFT
+    def_bool $(shields_list_contains,sodapop_left)
+
+config SHIELD_SODAPOP_RIGHT
+    def_bool $(shields_list_contains,sodapop_right)

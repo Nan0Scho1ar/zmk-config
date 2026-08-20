@@ -30,5 +30,10 @@ include:
     shield: wavelength
 
   - board: nice_nano_v2
+    shield: sodapop_left
+  - board: nice_nano_v2
+    shield: sodapop_right
+
+  - board: nice_nano_v2
     shield: settings_reset
 

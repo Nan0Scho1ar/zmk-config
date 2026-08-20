@@ -1,0 +1,16 @@
+if SHIELD_SODAPOP_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "sodapop"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_SODAPOP_LEFT
+
+if SHIELD_SODAPOP_LEFT || SHIELD_SODAPOP_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_SODAPOP_LEFT || SHIELD_SODAPOP_RIGHT
